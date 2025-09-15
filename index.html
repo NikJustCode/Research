@@ -1,256 +1,282 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Стандарты Роста Женщин в России: Научный Анализ</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F2F2F2;
-        }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 320px;
-            max-height: 400px;
-        }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 400px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Антропометрические Стандарты Роста Женского Населения России</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+color: #333333;
+background-color: #ffffff;
+font-size: 16px;
+}
+.container {
+max-width: 850px;
+margin: 20px auto;
+padding: 0 15px;
+border: 1px solid #cccccc;
+background-color: #fdfdfd;
+}
+header {
+border-bottom: 2px solid #000000;
+padding-bottom: 15px;
+margin-bottom: 25px;
+}
+h1 {
+font-size: 26px;
+font-weight: bold;
+color: #000000;
+margin-bottom: 5px;
+}
+h2 {
+font-size: 22px;
+font-weight: bold;
+color: #000000;
+border-bottom: 1px solid #cccccc;
+padding-bottom: 8px;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+h3 {
+font-size: 18px;
+font-weight: bold;
+color: #000000;
+margin-top: 15px;
+}
+p {
+margin-bottom: 15px;
+text-align: justify;
+}
+.abstract {
+font-style: italic;
+color: #555555;
+margin-bottom: 25px;
+}
+.chart-container {
+width: 100%;
+max-width: 700px;
+margin: 25px auto;
+height: 400px;
+}
+.table-container {
+margin: 20px 0;
+border: 1px solid #cccccc;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid #cccccc;
+padding: 10px;
+text-align: left;
+}
+th {
+background-color: #f2f2f2;
+font-weight: bold;
+}
+.expert-section {
+display: flex;
+align-items: flex-start;
+gap: 25px;
+margin-top: 20px;
+padding: 15px;
+background-color: #f9f9f9;
+border: 1px solid #eeeeee;
+}
+.expert-photo {
+width: 120px;
+height: 120px;
+background-color: #e0e0e0;
+border: 1px solid #cccccc;
+flex-shrink: 0;
+text-align: center;
+line-height: 120px;
+color: #888888;
+}
+blockquote {
+margin: 0;
+padding-left: 15px;
+border-left: 4px solid #cccccc;
+font-style: italic;
+color: #444444;
+}
+footer {
+margin-top: 30px;
+padding-top: 15px;
+border-top: 1px solid #cccccc;
+font-size: 12px;
+color: #666666;
+}
+</style>
 </head>
-<body class="text-[#002D47]">
-    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+<body>
+<div class="container">
+<header>
+        <h1>Анализ стандартов роста женщин в России на основе данных исследования ЭССЕ-РФ</h1>
+        <p class="abstract">Представлен научный анализ современных антропометрических данных для взрослого женского населения (возрастная группа 25-64 лет) Российской Федерации.</p>
+    </header>
 
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-black text-[#005082] mb-4">Стандарты Роста Женщин в России</h1>
-            <p class="text-lg text-[#0077C0]">Научно-обоснованный подход на основе современных антропометрических данных для взрослого женского населения (25-64 лет).</p>
-        </header>
+    <section>
+        <h2>1. Основные статистические показатели</h2>
+        <p>Анализ базируется на репрезентативных данных, полученных в ходе эпидемиологического исследования "Эпидемиология сердечно-сосудистых заболеваний и их факторов риска в регионах Российской Федерации" (ЭССЕ-РФ). Приведенные ниже метрики являются основой для определения популяционных норм.</p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Показатель</th>
+                        <th>Значение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Среднее значение роста (Mean)</td>
+                        <td>164.5 см</td>
+                    </tr>
+                    <tr>
+                        <td>Стандартное отклонение (σ)</td>
+                        <td>~7.0 см</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
-            <h2 class="text-3xl font-bold text-center text-[#005082] mb-6">Ключевые Метрики Исследования ЭССЕ-РФ</h2>
-            <p class="text-center max-w-3xl mx-auto mb-8 text-base">Основой для анализа служат данные крупнейшего эпидемиологического исследования "ЭССЕ-РФ", которое предоставляет наиболее актуальные и репрезентативные показатели физического развития населения России. Эти цифры являются отправной точкой для определения нормы и отклонений.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-                <div class="bg-[#F2F2F2] p-6 rounded-lg">
-                    <p class="text-lg text-[#0077C0] mb-2">Средний Рост (Mean)</p>
-                    <p class="text-6xl font-black text-[#00A1E4]">164.5 <span class="text-4xl">см</span></p>
-                </div>
-                <div class="bg-[#F2F2F2] p-6 rounded-lg">
-                    <p class="text-lg text-[#0077C0] mb-2">Стандартное Отклонение (σ)</p>
-                    <p class="text-6xl font-black text-[#00A1E4]">~7.0 <span class="text-4xl">см</span></p>
-                </div>
+    <section>
+        <h2>2. Распределение роста в популяции</h2>
+        <p>Рост человека, как и большинство биологических признаков, подчиняется закону нормального распределения. Это означает, что большинство значений группируется вокруг среднего, а крайние значения встречаются значительно реже. Гистограмма ниже визуализирует процентное соотношение популяции в каждом диапазоне, определенном стандартными отклонениями (σ).</p>
+        <div class="chart-container">
+            <canvas id="distributionChart"></canvas>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Классификация роста по диапазонам</h2>
+        <p>С использованием метода сигмальных отклонений, который является стандартным подходом в антропометрии, рост популяции классифицирован на пять статистических диапазонов. Данный метод позволяет объективно оценить индивидуальные показатели относительно средних по популяции.</p>
+        <div class="chart-container" style="height: 450px;">
+            <canvas id="heightRangesChart"></canvas>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Экспертное заключение</h2>
+        <div class="expert-section">
+            <div class="expert-photo">Фото</div>
+            <div>
+                <h3>Наталья Георгиевна Мокрышева</h3>
+                <p style="font-size: 14px; color: #555;">Директор ФГБУ «НМИЦ эндокринологии» Минздрава России, член-корр. РАН</p>
+                <blockquote>
+                    "Для корректной оценки состояния здоровья и физического развития... критически важно опираться на <b>современные национальные нормативы</b>, полученные в ходе крупных эпидемиологических исследований. Это позволяет нам понимать, что является нормой для нашей популяции именно сегодня."
+                </blockquote>
+                <p style="margin-top: 15px;">Данная позиция подтверждает научную обоснованность использования данных исследования ЭССЕ-РФ для определения актуальных стандартов роста в России.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
-            <h2 class="text-3xl font-bold text-center text-[#005082] mb-4">Распределение Роста в Популяции</h2>
-            <p class="text-center max-w-3xl mx-auto mb-6 text-base">Рост, как и многие биологические признаки, подчиняется закону нормального распределения. Это означает, что большинство женщин имеют рост, близкий к среднему значению. Диаграмма ниже иллюстрирует, какой процент популяции попадает в каждый диапазон, определенный через стандартные отклонения (σ).</p>
-            <div class="chart-container">
-                <canvas id="distributionChart"></canvas>
-            </div>
-        </section>
+    <footer>
+        <p>Источник данных: Муромцева Г.А., и др. (2014). "Распространенность факторов риска неинфекционных заболеваний в российской популяции в 2012-2013 гг. Результаты исследования ЭССЕ-РФ".</p>
+        <p>Примечание: Графические материалы сгенерированы с использованием библиотеки Chart.js.</p>
+    </footer>
 
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
-            <h2 class="text-3xl font-bold text-center text-[#005082] mb-4">Классификация Роста по Статистическим Диапазонам</h2>
-            <p class="text-center max-w-3xl mx-auto mb-6 text-base">Используя метод сигмальных отклонений, мы можем четко определить границы для каждой категории роста. Этот метод является золотым стандартом в антропометрии и позволяет объективно классифицировать индивидуальные показатели на основе популяционных данных.</p>
-            <div class="chart-container" style="height: 450px;">
-                <canvas id="heightRangesChart"></canvas>
-            </div>
-        </section>
+</div>
 
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
-            <h2 class="text-3xl font-bold text-center text-[#005082] mb-6">Подтверждение Эксперта</h2>
-            <div class="md:flex items-center gap-8">
-                <div class="text-center md:text-left mb-6 md:mb-0">
-                    <div class="w-32 h-32 mx-auto md:mx-0 rounded-full bg-[#00A1E4] flex items-center justify-center text-white text-6xl font-bold">
-                        НГ
-                    </div>
-                    <h3 class="text-xl font-bold mt-4">Наталья Георгиевна Мокрышева</h3>
-                    <p class="text-sm text-[#0077C0]">Директор ФГБУ «НМИЦ эндокринологии» Минздрава России, член-корр. РАН</p>
-                </div>
-                <div class="flex-1">
-                    <blockquote class="border-l-4 border-[#00A1E4] pl-4 italic text-lg text-[#002D47]">
-                        "Для корректной оценки состояния здоровья и физического развития... критически важно опираться на <span class="font-bold">современные национальные нормативы</span>, полученные в ходе крупных эпидемиологических исследований. Это позволяет нам понимать, что является нормой для нашей популяции именно сегодня."
-                    </blockquote>
-                    <p class="mt-4 text-base">Позиция эксперта подтверждает, что использование данных исследования ЭССЕ-РФ является наиболее корректным и научно обоснованным подходом для определения актуальных стандартов роста в России.</p>
-                </div>
-            </div>
-        </section>
+<script>
+    const academicColors = {
+        primary: 'rgba(100, 100, 100, 0.8)',
+        secondary: 'rgba(150, 150, 150, 0.8)',
+        tertiary: 'rgba(50, 50, 50, 0.8)',
+        border: 'rgba(0, 0, 0, 1)'
+    };
 
-        <footer class="text-center mt-12 text-sm text-gray-500">
-            <p>Инфографика подготовлена на основе данных исследования: Муромцева Г.А., и др. (2014). "Распространенность факторов риска неинфекционных заболеваний в российской популяции в 2012-2013 гг. Результаты исследования ЭССЕ-РФ".</p>
-            <p class="mt-2">Цветовая палитра: Brilliant Blues. Подтверждение: В коде не использовались ни Mermaid JS, ни SVG.</p>
-        </footer>
-
-    </div>
-
-    <script>
-        const brilliantBlues = {
-            primary: '#00A1E4',
-            secondary: '#0077C0',
-            tertiary: '#005082',
-            dark: '#002D47',
-            light: '#F2F2F2'
-        };
-
-        function processLabel(label) {
-            if (typeof label !== 'string' || label.length <= 16) {
-                return label;
-            }
-            const words = label.split(' ');
-            const lines = [];
-            let currentLine = '';
-            for (const word of words) {
-                if ((currentLine + word).length > 16) {
-                    lines.push(currentLine.trim());
-                    currentLine = '';
-                }
-                currentLine += word + ' ';
-            }
-            lines.push(currentLine.trim());
-            return lines;
+    function processLabel(label) {
+        if (typeof label !== 'string' || label.length <= 20) return label;
+        const parts = label.split('(');
+        if (parts.length > 1) {
+            return [parts.trim(), `(${parts[1]}`];
         }
+        return label;
+    }
 
-        const tooltipTitleCallback = (tooltipItems) => {
-            const item = tooltipItems[0];
-            let label = item.chart.data.labels[item.dataIndex];
-            if (Array.isArray(label)) {
-                return label.join(' ');
-            } else {
-                return label;
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems;
+        let label = item.chart.data.labels[item.dataIndex];
+        return Array.isArray(label) ? label.join(' ') : label;
+    };
+
+    const distributionCtx = document.getElementById('distributionChart').getContext('2d');
+    new Chart(distributionCtx, {
+        type: 'bar',
+        data: {
+            labels: ['< -2σ', '-2σ до -1σ', '-1σ до +1σ', '+1σ до +2σ', '> +2σ'],
+            datasets: [{
+                label: '% популяции',
+                data: [2.3, 13.6, 68.2, 13.6, 2.3],
+                backgroundColor: [
+                    academicColors.secondary,
+                    academicColors.primary,
+                    academicColors.tertiary,
+                    academicColors.primary,
+                    academicColors.secondary,
+                ],
+                borderColor: academicColors.border,
+                borderWidth: 1,
+                barPercentage: 0.9,
+                categoryPercentage: 0.9
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: { beginAtZero: true, title: { display: true, text: 'Процент от общей популяции (%)' } },
+                x: { grid: { display: false } }
             }
-        };
-        
-        const distributionCtx = document.getElementById('distributionChart').getContext('2d');
-        new Chart(distributionCtx, {
-            type: 'bar',
-            data: {
-                labels: ['< -2σ', '-2σ до -1σ', '-1σ до +1σ', '+1σ до +2σ', '> +2σ'].map(processLabel),
-                datasets: [{
-                    label: '% популяции',
-                    data: [2.3, 13.6, 68.2, 13.6, 2.3],
-                    backgroundColor: [
-                        brilliantBlues.primary,
-                        brilliantBlues.secondary,
-                        brilliantBlues.tertiary,
-                        brilliantBlues.secondary,
-                        brilliantBlues.primary,
-                    ],
-                    borderColor: brilliantBlues.dark,
-                    borderWidth: 1,
-                    barPercentage: 1.0,
-                    categoryPercentage: 1.0
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            title: tooltipTitleCallback
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Процент от общей популяции (%)'
-                        }
-                    },
-                    x: {
-                        grid: {
-                          display: false
-                        }
+        }
+    });
+
+    const heightRangesCtx = document.getElementById('heightRangesChart').getContext('2d');
+    new Chart(heightRangesCtx, {
+        type: 'bar',
+        data: {
+            labels: [
+                'Низкий (<150.5 см)', 
+                'Ниже среднего (150.5-157.5 см)', 
+                'Средний / Норма (157.5-171.5 см)', 
+                'Выше среднего (171.5-178.5 см)', 
+                'Высокий (>178.5 см)'
+            ].map(processLabel),
+            datasets: [{
+                label: 'Диапазон роста (см)',
+                data: [ [140, 150.5], [150.5, 157.5], [157.5, 171.5], [171.5, 178.5], [178.5, 190] ],
+                backgroundColor: academicColors.primary,
+                borderWidth: 1,
+                borderColor: academicColors.border,
+                borderSkipped: false
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback,
+                        label: (context) => `Диапазон: ${context.raw[0]} - ${context.raw[1]} см`
                     }
                 }
-            }
-        });
-        
-        const heightRangesCtx = document.getElementById('heightRangesChart').getContext('2d');
-        new Chart(heightRangesCtx, {
-            type: 'bar',
-            data: {
-                labels: [
-                    'Низкий (<150.5 см)', 
-                    'Ниже среднего (150.5-157.5 см)', 
-                    'Средний / Норма (157.5-171.5 см)', 
-                    'Выше среднего (171.5-178.5 см)', 
-                    'Высокий (>178.5 см)'
-                ].map(processLabel),
-                datasets: [{
-                    label: 'Диапазон роста (см)',
-                    data: [
-                        [140, 150.5],
-                        [150.5, 157.5],
-                        [157.5, 171.5],
-                        [171.5, 178.5],
-                        [178.5, 190]
-                    ],
-                    backgroundColor: [
-                        brilliantBlues.primary,
-                        brilliantBlues.secondary,
-                        brilliantBlues.tertiary,
-                        brilliantBlues.secondary,
-                        brilliantBlues.primary,
-                    ],
-                    borderWidth: 1,
-                    borderColor: brilliantBlues.dark,
-                    borderSkipped: false
-                }]
             },
-            options: {
-                indexAxis: 'y',
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            title: tooltipTitleCallback,
-                            label: function(context) {
-                                const range = context.raw;
-                                return `Диапазон: ${range[0]} - ${range[1]} см`;
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    x: {
-                        min: 140,
-                        max: 190,
-                        title: {
-                            display: true,
-                            text: 'Рост (см)'
-                        }
-                    },
-                     y: {
-                        ticks: {
-                            autoSkip: false
-                        }
-                    }
-                }
+            scales: {
+                x: { min: 140, max: 190, title: { display: true, text: 'Рост (см)' } },
+                y: { ticks: { autoSkip: false } }
             }
-        });
-
-    </script>
+        }
+    });
+</script>
 </body>
 </html>
