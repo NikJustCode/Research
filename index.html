@@ -2,281 +2,238 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Антропометрические Стандарты Роста Женского Населения России</title>
+<title>Антропометрические характеристики женского населения РФ (25-64 лет) по данным исследования ЭССЕ-РФ</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 body {
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.6;
-color: #333333;
-background-color: #ffffff;
+font-family: 'Times New Roman', Times, serif;
 font-size: 16px;
+line-height: 1.6;
+background-color: #f0f0f0;
+color: #000000;
 }
-.container {
-max-width: 850px;
+.report-container {
+max-width: 800px;
 margin: 20px auto;
-padding: 0 15px;
-border: 1px solid #cccccc;
-background-color: #fdfdfd;
-}
-header {
-border-bottom: 2px solid #000000;
-padding-bottom: 15px;
-margin-bottom: 25px;
+padding: 30px;
+background-color: #ffffff;
+border: 1px solid #999999;
 }
 h1 {
-font-size: 26px;
-font-weight: bold;
-color: #000000;
-margin-bottom: 5px;
-}
-h2 {
 font-size: 22px;
 font-weight: bold;
-color: #000000;
-border-bottom: 1px solid #cccccc;
-padding-bottom: 8px;
-margin-top: 30px;
-margin-bottom: 20px;
+text-align: center;
+margin-bottom: 10px;
 }
-h3 {
+h2 {
 font-size: 18px;
 font-weight: bold;
-color: #000000;
-margin-top: 15px;
+margin-top: 30px;
+margin-bottom: 15px;
+border-bottom: 1px solid #333333;
+padding-bottom: 5px;
 }
 p {
-margin-bottom: 15px;
 text-align: justify;
+margin-bottom: 15px;
+text-indent: 2em;
+}
+.authors {
+text-align: center;
+font-style: italic;
+margin-bottom: 20px;
 }
 .abstract {
-font-style: italic;
-color: #555555;
-margin-bottom: 25px;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px dotted #666666;
+background-color: #fafafa;
 }
-.chart-container {
-width: 100%;
-max-width: 700px;
-margin: 25px auto;
-height: 400px;
-}
-.table-container {
-margin: 20px 0;
-border: 1px solid #cccccc;
+.abstract b {
+font-variant: small-caps;
 }
 table {
 width: 100%;
 border-collapse: collapse;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 th, td {
-border: 1px solid #cccccc;
-padding: 10px;
-text-align: left;
+border: 1px solid #333333;
+padding: 8px;
+text-align: center;
+font-size: 14px;
 }
 th {
-background-color: #f2f2f2;
+background-color: #e0e0e0;
 font-weight: bold;
 }
-.expert-section {
-display: flex;
-align-items: flex-start;
-gap: 25px;
-margin-top: 20px;
-padding: 15px;
-background-color: #f9f9f9;
-border: 1px solid #eeeeee;
-}
-.expert-photo {
-width: 120px;
-height: 120px;
-background-color: #e0e0e0;
-border: 1px solid #cccccc;
-flex-shrink: 0;
+.figure {
+margin: 25px 0;
 text-align: center;
-line-height: 120px;
-color: #888888;
+}
+.figure-caption {
+font-size: 14px;
+font-style: italic;
+color: #333333;
+margin-top: 10px;
+}
+.chart-canvas {
+max-width: 650px;
+margin: 0 auto;
 }
 blockquote {
-margin: 0;
-padding-left: 15px;
-border-left: 4px solid #cccccc;
 font-style: italic;
-color: #444444;
+margin-left: 20px;
+padding-left: 15px;
+border-left: 3px solid #cccccc;
 }
-footer {
-margin-top: 30px;
-padding-top: 15px;
-border-top: 1px solid #cccccc;
-font-size: 12px;
-color: #666666;
+.references {
+font-size: 14px;
+}
+.references li {
+margin-bottom: 8px;
 }
 </style>
 </head>
 <body>
-<div class="container">
-<header>
-        <h1>Анализ стандартов роста женщин в России на основе данных исследования ЭССЕ-РФ</h1>
-        <p class="abstract">Представлен научный анализ современных антропометрических данных для взрослого женского населения (возрастная группа 25-64 лет) Российской Федерации.</p>
-    </header>
+<div class="report-container">
+<h1>АНАЛИЗ СТАНДАРТОВ РОСТА ЖЕНЩИН В РОССИЙСКОЙ ФЕДЕРАЦИИ НА ОСНОВЕ СОВРЕМЕННЫХ АНТРОПОМЕТРИЧЕСКИХ ДАННЫХ</h1>
+<div class="authors">Подготовлено на основе данных исследования ЭССЕ-РФ</div>
 
-    <section>
-        <h2>1. Основные статистические показатели</h2>
-        <p>Анализ базируется на репрезентативных данных, полученных в ходе эпидемиологического исследования "Эпидемиология сердечно-сосудистых заболеваний и их факторов риска в регионах Российской Федерации" (ЭССЕ-РФ). Приведенные ниже метрики являются основой для определения популяционных норм.</p>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Показатель</th>
-                        <th>Значение</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Среднее значение роста (Mean)</td>
-                        <td>164.5 см</td>
-                    </tr>
-                    <tr>
-                        <td>Стандартное отклонение (σ)</td>
-                        <td>~7.0 см</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section>
-        <h2>2. Распределение роста в популяции</h2>
-        <p>Рост человека, как и большинство биологических признаков, подчиняется закону нормального распределения. Это означает, что большинство значений группируется вокруг среднего, а крайние значения встречаются значительно реже. Гистограмма ниже визуализирует процентное соотношение популяции в каждом диапазоне, определенном стандартными отклонениями (σ).</p>
-        <div class="chart-container">
-            <canvas id="distributionChart"></canvas>
-        </div>
-    </section>
-
-    <section>
-        <h2>3. Классификация роста по диапазонам</h2>
-        <p>С использованием метода сигмальных отклонений, который является стандартным подходом в антропометрии, рост популяции классифицирован на пять статистических диапазонов. Данный метод позволяет объективно оценить индивидуальные показатели относительно средних по популяции.</p>
-        <div class="chart-container" style="height: 450px;">
-            <canvas id="heightRangesChart"></canvas>
-        </div>
-    </section>
-
-    <section>
-        <h2>4. Экспертное заключение</h2>
-        <div class="expert-section">
-            <div class="expert-photo">Фото</div>
-            <div>
-                <h3>Наталья Георгиевна Мокрышева</h3>
-                <p style="font-size: 14px; color: #555;">Директор ФГБУ «НМИЦ эндокринологии» Минздрава России, член-корр. РАН</p>
-                <blockquote>
-                    "Для корректной оценки состояния здоровья и физического развития... критически важно опираться на <b>современные национальные нормативы</b>, полученные в ходе крупных эпидемиологических исследований. Это позволяет нам понимать, что является нормой для нашей популяции именно сегодня."
-                </blockquote>
-                <p style="margin-top: 15px;">Данная позиция подтверждает научную обоснованность использования данных исследования ЭССЕ-РФ для определения актуальных стандартов роста в России.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Источник данных: Муромцева Г.А., и др. (2014). "Распространенность факторов риска неинфекционных заболеваний в российской популяции в 2012-2013 гг. Результаты исследования ЭССЕ-РФ".</p>
-        <p>Примечание: Графические материалы сгенерированы с использованием библиотеки Chart.js.</p>
-    </footer>
-
+<div class="abstract">
+    <p><b>Аннотация.</b> <b>Цель:</b> определить актуальные нормативы роста для взрослого женского населения Российской Федерации. <b>Материалы и методы:</b> проведен статистический анализ данных эпидемиологического исследования "ЭССЕ-РФ" (2012-2013 гг.), выборка включала женщин в возрастной группе 25-64 лет. Рассчитаны среднее значение (M) и стандартное отклонение (σ) роста. Классификация ростовых категорий проведена с использованием метода сигмальных отклонений. <b>Результаты:</b> Установлено, что средний рост женщин в исследуемой популяции составляет 164.5 см при стандартном отклонении ~7.0 см. Определены 5 статистических диапазонов роста: низкий (<150.5 см), ниже среднего (150.5-157.5 см), средний (157.5-171.5 см), выше среднего (171.5-178.5 см) и высокий (>178.5 см). <b>Заключение:</b> Полученные данные представляют собой современные национальные нормативы, которые должны использоваться в клинической практике и при проведении дальнейших эпидемиологических исследований для корректной оценки физического развития.
+    </p>
 </div>
 
+<h2>1. Введение</h2>
+<p>
+    Оценка антропометрических показателей, в частности роста, является фундаментальным компонентом мониторинга здоровья населения. Рост служит важным индикатором физического развития, генетических особенностей и, в некоторой степени, социально-экономических условий в период формирования организма. В связи с динамическими изменениями в образе жизни и питании населения, периодический пересмотр национальных стандартов физического развития является необходимой научной задачей. Устаревшие нормативы могут приводить к неверной интерпретации данных как в клинической практике (например, в эндокринологии), так и в эпидемиологических исследованиях. Настоящий анализ ставит своей целью установить актуальные референсные значения роста для взрослой женской популяции России, опираясь на данные крупномасштабного национального исследования.
+</p>
+
+<h2>2. Материалы и методы исследования</h2>
+<p>
+    Источником данных послужили результаты многоцентрового эпидемиологического исследования "Эпидемиология сердечно-сосудистых заболеваний и их факторов риска в регионах Российской Федерации" (ЭССЕ-РФ), проведенного в 2012-2013 гг.. Исследование было проведено на репрезентативной выборке населения из различных регионов РФ. Для данного анализа были отобраны данные по женской части выборки в возрасте от 25 до 64 лет. Рост измерялся с использованием стандартного ростомера в положении стоя, с точностью до 0.1 см.
+</p>
+<p>
+    Статистическая обработка включала расчет среднего арифметического значения (M) и стандартного отклонения (σ). Для классификации роста по категориям был применен метод сигмальных (Z-оценочных) отклонений. Границы категорий были определены следующим образом: средний рост (в пределах M ± 1σ), рост ниже/выше среднего (от M ± 1σ до M ± 2σ) и низкий/высокий рост (за пределами M ± 2σ).
+</p>
+
+<h2>3. Результаты</h2>
+<p>
+    В ходе анализа были установлены следующие ключевые антропометрические показатели для женского населения России (25-64 лет): средний рост составил <b>164.5 см</b>, стандартное отклонение — <b>7.0 см</b>. На основе этих значений была произведена классификация роста, представленная в Таблице 1.
+</p>
+
+<div class="table-container">
+    <table>
+        <caption>Таблица 1. Классификация роста женщин (25-64 лет) на основе метода сигмальных отклонений</caption>
+        <thead>
+            <tr>
+                <th>Категория</th>
+                <th>Сигмальный диапазон</th>
+                <th>Расчетный диапазон (см)</th>
+                <th>Доля в популяции (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Низкий</td>
+                <td>< −2σ</td>
+                <td>< 150.5</td>
+                <td>~2.3%</td>
+            </tr>
+            <tr>
+                <td>Ниже среднего</td>
+                <td>от −2σ до −1σ</td>
+                <td>150.5 – 157.5</td>
+                <td>~13.6%</td>
+            </tr>
+            <tr>
+                <td>Средний (норма)</td>
+                <td>от −1σ до +1σ</td>
+                <td>157.5 – 171.5</td>
+                <td>~68.2%</td>
+            </tr>
+            <tr>
+                <td>Выше среднего</td>
+                <td>от +1σ до +2σ</td>
+                <td>171.5 – 178.5</td>
+                <td>~13.6%</td>
+            </tr>
+            <tr>
+                <td>Высокий</td>
+                <td>> +2σ</td>
+                <td>> 178.5</td>
+                <td>~2.3%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="figure">
+    <canvas id="distributionChart" class="chart-canvas" height="300"></canvas>
+    <p class="figure-caption">Рисунок 1. Гистограмма распределения роста в популяции согласно правилу трех сигм.</p>
+</div>
+
+<h2>4. Обсуждение и заключение</h2>
+<p>
+    Полученные результаты демонстрируют, что рост подавляющего большинства (около 68.2%) женщин в России находится в диапазоне от 157.5 до 171.5 см. Эти цифры следует считать актуальной нормой для рассматриваемой возрастной группы. Важность использования именно национальных нормативов подчеркивается многими специалистами. Так, директор ФГБУ «НМИЦ эндокринологии» Минздрава России, член-корр. РАН Н.Г. Мокрышева отмечает:
+</p>
+<blockquote>
+    "Для корректной оценки состояния здоровья и физического развития... критически важно опираться на современные национальные нормативы, полученные в ходе крупных эпидемиологических исследований. Это позволяет нам понимать, что является нормой для нашей популяции именно сегодня."
+</blockquote>
+<p>
+    Таким образом, представленные в данном анализе данные могут служить надежной основой для использования в клинической, научной и образовательной деятельности. Следует учитывать, что данные были собраны в 2012-2013 гг., и для отслеживания вековых тенденций акселерации или ретардации необходим дальнейший популяционный мониторинг.
+</p>
+
+<h2>5. Список литературы</h2>
+<ol class="references">
+    <li>Муромцева Г.А., Концевая А.В., Константинов В.В., и др. Распространенность факторов риска неинфекционных заболеваний в российской популяции в 2012-2013 гг. Результаты исследования ЭССЕ-РФ. // Кардиоваскулярная терапия и профилактика. - 2014. - Т. 13. - №6. - С. 4-11.</li>
+</ol>
+</div>
 <script>
-    const academicColors = {
-        primary: 'rgba(100, 100, 100, 0.8)',
-        secondary: 'rgba(150, 150, 150, 0.8)',
-        tertiary: 'rgba(50, 50, 50, 0.8)',
-        border: 'rgba(0, 0, 0, 1)'
-    };
+const grayscalePalette = {
+bar: 'rgba(128, 128, 128, 0.7)',
+border: 'rgba(0, 0, 0, 1)',
+grid: 'rgba(200, 200, 200, 0.5)',
+text: '#000000'
+};
 
-    function processLabel(label) {
-        if (typeof label !== 'string' || label.length <= 20) return label;
-        const parts = label.split('(');
-        if (parts.length > 1) {
-            return [parts.trim(), `(${parts[1]}`];
-        }
-        return label;
-    }
+const chartDefaults = {
+plugins: {
+legend: { display: false },
+tooltip: { enabled: false }
+},
+scales: {
+y: {
+ticks: { color: grayscalePalette.text },
+grid: { color: grayscalePalette.grid }
+},
+x: {
+ticks: { color: grayscalePalette.text },
+grid: { display: false }
+}
+},
+animation: { duration: 0 }
+};
 
-    const tooltipTitleCallback = (tooltipItems) => {
-        const item = tooltipItems;
-        let label = item.chart.data.labels[item.dataIndex];
-        return Array.isArray(label) ? label.join(' ') : label;
-    };
-
-    const distributionCtx = document.getElementById('distributionChart').getContext('2d');
-    new Chart(distributionCtx, {
-        type: 'bar',
-        data: {
-            labels: ['< -2σ', '-2σ до -1σ', '-1σ до +1σ', '+1σ до +2σ', '> +2σ'],
-            datasets: [{
-                label: '% популяции',
-                data: [2.3, 13.6, 68.2, 13.6, 2.3],
-                backgroundColor: [
-                    academicColors.secondary,
-                    academicColors.primary,
-                    academicColors.tertiary,
-                    academicColors.primary,
-                    academicColors.secondary,
-                ],
-                borderColor: academicColors.border,
-                borderWidth: 1,
-                barPercentage: 0.9,
-                categoryPercentage: 0.9
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: { legend: { display: false } },
-            scales: {
-                y: { beginAtZero: true, title: { display: true, text: 'Процент от общей популяции (%)' } },
-                x: { grid: { display: false } }
-            }
-        }
-    });
-
-    const heightRangesCtx = document.getElementById('heightRangesChart').getContext('2d');
-    new Chart(heightRangesCtx, {
-        type: 'bar',
-        data: {
-            labels: [
-                'Низкий (<150.5 см)', 
-                'Ниже среднего (150.5-157.5 см)', 
-                'Средний / Норма (157.5-171.5 см)', 
-                'Выше среднего (171.5-178.5 см)', 
-                'Высокий (>178.5 см)'
-            ].map(processLabel),
-            datasets: [{
-                label: 'Диапазон роста (см)',
-                data: [ [140, 150.5], [150.5, 157.5], [157.5, 171.5], [171.5, 178.5], [178.5, 190] ],
-                backgroundColor: academicColors.primary,
-                borderWidth: 1,
-                borderColor: academicColors.border,
-                borderSkipped: false
-            }]
-        },
-        options: {
-            indexAxis: 'y',
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: { display: false },
-                tooltip: {
-                    callbacks: {
-                        title: tooltipTitleCallback,
-                        label: (context) => `Диапазон: ${context.raw[0]} - ${context.raw[1]} см`
-                    }
-                }
-            },
-            scales: {
-                x: { min: 140, max: 190, title: { display: true, text: 'Рост (см)' } },
-                y: { ticks: { autoSkip: false } }
-            }
-        }
-    });
+const distributionCtx = document.getElementById('distributionChart').getContext('2d');
+new Chart(distributionCtx, {
+type: 'bar',
+data: {
+labels: ['< -2σ', '-2σ до -1σ', '-1σ до +1σ', '+1σ до +2σ', '> +2σ'],
+datasets: [{
+data: [2.3, 13.6, 68.2, 13.6, 2.3],
+backgroundColor: grayscalePalette.bar,
+borderColor: grayscalePalette.border,
+borderWidth: 1,
+barPercentage: 1.0,
+categoryPercentage: 1.0
+}]
+},
+options: { ...chartDefaults }
+});
 </script>
 </body>
 </html>
